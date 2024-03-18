@@ -1,0 +1,364 @@
+<!-- https://www.youtube.com/watch?v=0YFrGy_mzjY&t=1026s -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<!-- <link
+			rel="stylesheet"
+			href="fontawesome-free-6.5.1-web/css/fontawesome.min.css" /> -->
+		<!-- <link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+			rel="stylesheet"
+			type="text/css" /> -->
+	</head>
+	<body>
+		<!-- NAV ELEMENT -->
+		<div id="header">
+			<div class="container">
+				<nav>
+					<!-- <h1>Roberto.</h1> -->
+					<!-- <img src="img/android-chrome-512x512.png" class="logo" /> -->
+					<p class="logo-text"><span class="logo-r">R</span>T</p>
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<svg
+							class="nav-icon xmark"
+							onclick="closemenu()"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 384 512">
+							<path
+								d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+						</svg>
+					</ul>
+					<svg
+						class="nav-icon burger-menu"
+						onclick="openmenu()"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 448 512">
+						<path
+							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+					</svg>
+				</nav>
+				<div class="header-text">
+					<p>CS Student</p>
+					<h1>Hi, I'm <span>Roberto</span> Togni</h1>
+				</div>
+			</div>
+		</div>
+		<!-- ABOUT SECTION -->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col1">
+						<img src="assets/img/bike.jpg" />
+					</div>
+					<div class="about-col2">
+						<h1 class="sub-title">About Me</h1>
+						<p>
+							I'm a computer science student with a deep interest
+							for cybersecurity and robotics. I have a strong
+							passion for projects that include both a software
+							and hardware component.
+						</p>
+						<div class="tab-titles">
+							<p
+								class="tab-links active-link"
+								onclick="opentab('skills')">
+								Skills
+							</p>
+							<p
+								class="tab-links"
+								onclick="opentab('experience')">
+								Experience
+							</p>
+							<p class="tab-links" onclick="opentab('education')">
+								Education
+							</p>
+						</div>
+						<!-- skills -->
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li>
+									<span>Programming</span>
+									<br />Python, Java, C++
+									<!-- <br />Why spend 6 -->
+									<!-- minutes doing something by hand when you can -->
+									<!-- spend 6 hours failing to automate it -->
+								</li>
+								<li>
+									<span>Latex</span>
+									<!-- <br />Writing cool documents -->
+								</li>
+								<li>
+									<span>Computer Networks</span>
+									<!-- <br />Creating cool websites -->
+								</li>
+								<li>
+									<span>Web Development</span>
+									<!-- <br />Creating cool websites -->
+								</li>
+							</ul>
+						</div>
+						<!-- experience -->
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li>
+									<span>2022</span><br />CIBIO - Lab assistant
+								</li>
+								<li>
+									<span>2023</span><br />CIBIO - Research
+									assistant
+								</li>
+							</ul>
+						</div>
+						<!-- education -->
+						<div class="tab-contents" id="education">
+							<ul>
+								<li>
+									<span>2022 - Ongoing</span><br />Bacherlor's
+									Degree in CS
+								</li>
+								<li>
+									<span>2023 - 2024</span><br />Erasmus at the
+									University of Göttingen
+								</li>
+								<li>
+									<span>2020 - 2023</span><br />Bachelor's
+									Degree in Biotechnology
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Projects -->
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="sub-title">My Projects</h1>
+				<div class="work-list">
+					<div class="work">
+						<div class="image-wrapper">
+							<img src="assets/img/questor_cropped.jpg" />
+						</div>
+						<div class="layer">
+							<h3>Robotics</h3>
+							<p>
+								Two-wheeled robot that uses EKF-SLAM to explore
+								a map, then finds the best path and follows it
+								while avoiding obstacles.
+							</p>
+							<a
+								href="https://github.com/rtogni00/computer-vision-and-robotics"
+								target="_blank">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512">
+									<path
+										d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="work">
+						<div class="image-wrapper">
+							<img src="assets/img/cibio.png" />
+						</div>
+						<div class="layer">
+							<h3>Bioinformatics</h3>
+							<p>
+								Development of a machine learning approach for
+								the prediction of RG4-binding proteins.
+							</p>
+							<a
+								href="assets/downloads/Togni_Roberto_Thesis.pdf"
+								download>
+								<!-- <svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512">
+									<path
+										d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+								</svg> -->
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512">
+									<path
+										d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="work">
+						<div class="image-wrapper">
+							<img src="assets/img/lungs.jpg" />
+						</div>
+						<div class="layer">
+							<h3>Deep Learning</h3>
+							<p>
+								Deep Learning project to classify chest X-ray
+								images into three cathegories: normal,
+								pneumonia, and COVID-19.
+							</p>
+							<a
+								href="https://github.com/rtogni00/Covid-19_classification_models"
+								target="_blank">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512">
+									<path
+										d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<a
+					href="https://github.com/rtogni00"
+					target="_blank"
+					class="btn"
+					>See more</a
+				>
+			</div>
+		</div>
+		<!-- Contact -->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512">
+								<path
+									d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z" />
+							</svg>
+							rtogni00@gmail.com
+						</p>
+						<p>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 448 512">
+								<path
+									d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z" />
+							</svg>
+							+39 3407220535
+						</p>
+						<!-- Social icons -->
+						<div class="social-icons">
+							<a
+								href="https://www.linkedin.com/in/roberto-t-300b7b218/"
+								target="_blank">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 448 512">
+									<path
+										d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+								</svg>
+							</a>
+							<a
+								href="https://github.com/rtogni00"
+								target="_blank">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 448 512">
+									<path
+										d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7 .9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3 .6c1.3 1.3 1.8 3.3 .9 4.1c-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5 .6c1.1 1.3 1.3 2.8 .4 3.5c-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3 .7 1.9 1.8 1.5 2.6c-.4 .9-1.7 1.1-2.8 .4z" />
+								</svg>
+							</a>
+						</div>
+						<a
+							href="assets/downloads/CV_Togni.pdf"
+							download
+							class="btn btn2"
+							>Download CV</a
+						>
+					</div>
+					<div class="contact-right">
+						<form name="submit-to-google-sheet">
+							<input
+								type="text"
+								name="Name"
+								placeholder="Your Name"
+								required />
+							<input
+								type="email"
+								name="Email"
+								placeholder="Your Email"
+								required />
+							<textarea
+								name="Message"
+								rows="6"
+								placeholder="Your Message"></textarea>
+							<button type="submit" class="btn btn2">
+								Submit
+							</button>
+						</form>
+						<span id="msg"></span>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="copyright">
+				<p></p>
+			</div> -->
+		</div>
+
+		<!-- Javascript -->
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove("active-link");
+				}
+				for (tabcontent of tabcontents) {
+					tabcontent.classList.remove("active-tab");
+				}
+				//www.phind.com/agent?cache=cltn7arie00agkw08ydgeofdy
+				https: event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+		</script>
+
+		<script>
+			var sidemenu = document.getElementById("sidemenu");
+			function openmenu() {
+				console.log("Open menu called");
+				sidemenu.style.right = "0";
+			}
+			function closemenu() {
+				console.log("Close menu called");
+				// console.log(sidemenu);
+				sidemenu.style.right = "-200px";
+			}
+		</script>
+		<script>
+			const scriptURL =
+				"https://script.google.com/macros/s/AKfycbyPFEANfsYeDqDb1M9BREmdigp-mto9SQ9B9lvtrOkUzLM-o2rztEOydeyVTYrMUgrU/exec";
+			const form = document.forms["submit-to-google-sheet"];
+			const msg = document.getElementById("msg");
+
+			form.addEventListener("submit", (e) => {
+				e.preventDefault();
+				fetch(scriptURL, { method: "POST", body: new FormData(form) })
+					.then((response) => console.log("Success!", response))
+					.then((response) => {
+						msg.innerHTML = "Message sent!";
+						setTimeout(function () {
+							msg.innerHTML = "";
+						}, 5000);
+						form.reset();
+					})
+					.catch((error) => console.error("Error!", error.message));
+			});
+		</script>
+	</body>
+</html>
